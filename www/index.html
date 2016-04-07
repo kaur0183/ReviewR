@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+         <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+        <title>Review app</title>
+    </head>
+<body>
+  <section data-role="page" id="home" class="active-page">
+    <header>
+        <h1>Review&#1071;</h1>
+      </header>
+      <ul>
+      </ul>
+    <div data-href="add" class="fab">+</div>
+    </section>
+  
+    <section data-role="page" id="add" class="inactive-page">
+    <header>
+      <i class="fa fa-chevron-circle-left" id="previous1"></i><h1>Add Reviews</h1>
+    </header>
+    <div class="content">
+      <form>
+          <p><input type="text" id="Heading" placeholder="Heading"/></p>
+         
+         
+          <p><textarea id="Details" placeholder="Detail"></textarea></p>
+           <p id="one">
+            <input type="radio" name="rate" value="1"/><i></i>
+            <input type="radio" name="rate" value="2"/><i></i>
+            <input type="radio" name="rate" value="3"/><i></i>
+            <input type="radio" name="rate" value="4"/><i></i>
+            <input type="radio" name="rate" value="5"/><i></i>
+          </p>
+    
+          <p> <i class="fa fa-camera" id="cam"></i></p>
+         <i class="fa fa-times" id="previous2"></i>
+          <i class="fa fa-check" id="save"></i>
+
+      </form>
+    </div>
+  </section>
+  
+    <section data-role="page" id="feedback">
+    <header>
+      <i class="fa fa-chevron-circle-left" id="previous3"></i><h1>Review Details</h1>
+    </header>
+        <label id="title1"></label><br/>
+        <textarea id="review1" readonly></textarea><br/>
+        <img id="image" height="200" width="200"/><br/>
+        <div id="rating"></div>
+        <i class="fa fa-check" id="previous4"></i>
+  </section>
+
+<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+
+
